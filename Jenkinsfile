@@ -33,7 +33,7 @@ pipeline {
         stage('Docker Login') {
             steps {
                 echo "Logging in to Docker Hub"
-                bat 'docker login -u varimallamansa1 -p "Manasa@247"
+                bat 'docker login -u varimallamansa1 -p "Manasa@247" '
             }
         }
 
