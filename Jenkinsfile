@@ -8,16 +8,16 @@ pipeline {
         echo "Running Selenium Tests using pytest"
 
         // Install Python dependencies
-        bat '"C:\Users\MANASA\AppData\Roaming\Python\Python310\Scripts\pip.exe" install -r requirements.txt'
+        bat '"C:\\Users\\MANASA\\AppData\\Roaming\\Python\\Python310\\Scripts\\pip.exe" install -r requirements.txt'
 
         // Start Flask app (non-blocking)
-        bat '"C:\Users\MANASA\AppData\Roaming\Python\Python310\Scripts\pip.exe" app.py'
+        bat '"C:\\Users\\MANASA\\AppData\\Roaming\\Python\\Python310\\Scripts\\pip.exe" app.py'
 
         // Wait for Flask server to start
         bat 'ping 127.0.0.1 -n 5 > nul'
 
         // Run Selenium tests
-        bat '"C:\Users\MANASA\AppData\Roaming\Python\Python310\Scripts\pip.exe" -m pytest -v'
+        bat '"C:\\Users\\MANASA\\AppData\\Roaming\\Python\\Python310\\Scripts\\pip.exe" -m pytest -v'
 
     }
 }
