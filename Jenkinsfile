@@ -11,7 +11,7 @@ pipeline {
         bat '"C:\\Users\\MANASA\\AppData\\Roaming\\Python\\Python310\\Scripts\\pip.exe" install -r requirements.txt'
 
         // Start Flask app (non-blocking)
-        bat '"C:\\Users\\MANASA\\AppData\\Roaming\\Python\\Python310\\Scripts\\pip.exe" app.py'
+        bat 'python app.py'
 
         // Wait for Flask server to start
         bat 'ping 127.0.0.1 -n 5 > nul'
